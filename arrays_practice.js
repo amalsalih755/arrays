@@ -194,6 +194,117 @@ console.log("Smallest number:", smallest);
         let numm=[3,6,8,9,10];
         ;
         console.log(numm.LastIndex());
+        // Q27: Combine all array elements into one string using join()
+        let words = ["I", "love", "JavaScript"];
+        let sentence = words.join(" ");
+        console.log("Q27 - Joined string:", sentence);
+
+         // Q28: Create array of numbers and add 10 using map()
+         let nums2 = [5, 10, 15, 20, 25];
+         let plusTen = nums2.map(num => num + 10);
+         console.log("Q28 - Original:", nums2);
+         console.log("Q28 - After adding 10:", plusTen);
+
+        // Q29: Explain map(), filter(), and reduce()
+        let doubled = [1, 2, 3].map(x => x * 2);
+        console.log("Q29 - map example:", doubled);
+        let filtered = [10, 20, 30, 40].filter(x => x > 25);
+        console.log("Q29 - filter example:", filtered);
+         let sum = [1, 2, 3, 4].reduce((total, x) => total + x, 0);
+        console.log("Q29 - reduce example:", sum);
+
+        // Q30: Filter ages above 18
+       let ages = [12, 18, 20, 25, 30, 15];
+       let adults = ages.filter(age => age > 18);
+       console.log("Q30 - Ages above 18:", adults);
+
+      // Q31: Calculate total sum using reduce()
+      let prices = [100, 250, 400, 150];
+      let total = prices.reduce((sum, price) => sum + price, 0);
+      console.log("Q31 - Total sum:", total);
+
+
+// ------------------- Q32 – Q36 -------------------
+
+// Q32: Find the first value in an array that meets a condition using find()
+let numbers3 = [5, 12, 8, 130, 44];
+let firstOver10 = numbers3.find(num => num > 10);
+console.log("Q32 - First number > 10:", firstOver10);
+
+// Q33: Find the index of the first value that meets a condition using findIndex()
+let indexOver10 = numbers3.findIndex(num => num > 10);
+console.log("Q33 - Index of first number > 10:", indexOver10);
+
+// Q34: Test whether all items pass a condition using every()
+let allPositive = numbers3.every(num => num > 0);
+console.log("Q34 - Are all numbers positive?", allPositive);
+
+// Q35: Test whether at least one item passes a condition using some()
+let hasLargeNumber = numbers3.some(num => num > 100);
+console.log("Q35 - Has number > 100?", hasLargeNumber);
+
+// Q36: Flatten nested arrays using flat()
+let nested = [1, [2, 3], [4, [5, 6]]];
+let flatArray = nested.flat(2);
+console.log("Q36 - Flattened array:", flatArray);
+
+
+// ------------------- Q37 – Q44 -------------------
+
+// Q37: Use includes() to check if an item exists in an array
+let fruits4 = ["apple", "banana", "cherry"];
+console.log("Q37 - Includes 'banana'?", fruits4.includes("banana"));
+console.log("Q37 - Includes 'orange'?", fruits4.includes("orange"));
+
+// Q38: Find the last element of an array
+let numbers4 = [10, 20, 30, 40, 50];
+let last = numbers4[numbers4.length - 1];
+console.log("Q38 - Last element:", last);
+
+// Q39: Copy an array using spread operator
+let original = [1, 2, 3];
+let copys = [...original];
+console.log("Q39 - Original:", original);
+console.log("Q39 - Copy:", copys);
+
+// Q40: Merge arrays using spread operator
+let arr3 = ["A", "B"];
+let arr4 = ["C", "D"];
+let merged = [...arr3, ...arr4];
+console.log("Q40 - Merged array:", merged);
+
+// Q41: Remove duplicates using Set
+let numbersWithDup = [1, 2, 2, 3, 3, 4];
+let uniqueNumbers = [...new Set(numbersWithDup)];
+console.log("Q41 - Unique numbers:", uniqueNumbers);
+
+// Q42: Find maximum number using Math.max and spread
+let nums5 = [10, 5, 20, 15];
+let max = Math.max(...nums5);
+console.log("Q42 - Maximum number:", max);
+
+// Q43: Find minimum number using Math.min and spread
+let min = Math.min(...nums5);
+console.log("Q43 - Minimum number:", min);
+
+// Q44: Clear all elements from an array
+let arrToClear = [1, 2, 3, 4];
+arrToClear.length = 0;
+console.log("Q44 - Cleared array:", arrToClear);
+//me try it 
+let arrows=[2,4,5];
+arrows.fill(8);
+console.log("arrows is",arrows)
+//me try it 
+let ages1=[17,18,20,25,30,15].find(age =>age>18);
+console.log(ages1);
+//me try it 
+let prices3=[100,250,400,150].reduce((sum,price)=>sum+price,0 );
+console.log("",prices3);
+
+
+
+
 
           
 
